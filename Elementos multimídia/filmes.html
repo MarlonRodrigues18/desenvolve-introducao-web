@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .galeria a img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            transition: transform 0.3s;
+        }
+        .galeria a img:hover {
+            transform: scale(1.05);
+            border-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus Filmes Favoritos</h1>
+    <div class="galeria">
+        <a href="https://pt.wikipedia.org/wiki/The_Last_of_Us_(s%C3%A9rie_de_televis%C3%A3o)" target="_blank">
+            <img src="img/lastofus.jpg" alt="The Last of Us">
+        </a>
+        <a href="https://pt.wikipedia.org/wiki/God_of_War" target="_blank">
+            <img src="img/godofwar.jpg" alt="God of War">
+        </a>
+        <a href="https://pt.wikipedia.org/wiki/Interestelar" target="_blank">
+            <img src="img/interestelar.jpg" alt="Interestelar">
+        </a>
+        <a href="https://pt.wikipedia.org/wiki/O_Senhor_dos_An%C3%A9is" target="_blank">
+            <img src="img/senhordosaneis.jpg" alt="O Senhor dos Anéis">
+        </a>
+        <a href="https://pt.wikipedia.org/wiki/Matrix" target="_blank">
+            <img src="img/matrix.jpg" alt="Matrix">
+        </a>
+        <a href="https://pt.wikipedia.org/wiki/Inception" target="_blank">
+            <img src="img/inception.jpg" alt="A Origem">
+        </a>
+    </div>
+</body>
+</html>
