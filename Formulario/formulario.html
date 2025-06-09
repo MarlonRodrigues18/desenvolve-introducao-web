@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .radio-group, .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Dados Pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <h2>Pesquisa</h2>
+
+        <label>Como você avalia nosso atendimento?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="atendimento" value="excelente" required> Excelente</label>
+            <label><input type="radio" name="atendimento" value="bom"> Bom</label>
+            <label><input type="radio" name="atendimento" value="ruim"> Ruim</label>
+        </div>
+
+        <label>Você recomendaria nossos serviços a outras pessoas?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="recomendacao" value="sim" required> Sim</label>
+            <label><input type="radio" name="recomendacao" value="nao"> Não</label>
+        </div>
+
+        <label>Como você conheceu nossa empresa?</label>
+        <select name="origem" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="internet">Internet</option>
+            <option value="amigos">Indicação de amigos</option>
+            <option value="publicidade">Publicidade</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="compartilhar" required> Autorizo o compartilhamento da minha resposta com terceiros</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
